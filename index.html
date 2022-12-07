@@ -984,25 +984,25 @@
     <h3 class="field-label">Example data</h3>
     <div class="example-data-content-type">Content-Type: application/json</div>
     <pre class="example"><code>[ {
+  "updated_status" : "updated_status",
   "occurred" : "occurred",
   "prev_status" : "prev_status",
   "additionalItem" : "additionalItem",
+  "case_id" : "case_id",
   "ipAddress" : "ipAddress",
   "_id" : "_id",
   "event" : "event",
-  "worker" : [ "worker", "worker" ],
-  "case" : "case",
-  "status" : "status"
+  "worker" : [ "worker", "worker" ]
 }, {
+  "updated_status" : "updated_status",
   "occurred" : "occurred",
   "prev_status" : "prev_status",
   "additionalItem" : "additionalItem",
+  "case_id" : "case_id",
   "ipAddress" : "ipAddress",
   "_id" : "_id",
   "event" : "event",
-  "worker" : [ "worker", "worker" ],
-  "case" : "case",
-  "status" : "status"
+  "worker" : [ "worker", "worker" ]
 } ]</code></pre>
 
     <h3 class="field-label">Produces</h3>
@@ -1172,14 +1172,14 @@
     
     <div class="field-items">
       <div class="param">_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  format: ObjectId</div>
-<div class="param">case </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">case_id </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
 <div class="param">occurred (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
 <div class="param">ipAddress (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
 <div class="param">event (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
-<div class="param">prev_status (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
-<div class="param">status (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
-<div class="param">additionalItem (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
-<div class="param">worker </div><div class="param-desc"><span class="param-type"><a href="#string">array[String]</a></span>  </div>
+<div class="param">prev_status (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> 이전 상태의 코드 </div>
+<div class="param">updated_status (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> 현재 상태의 코드 </div>
+<div class="param">additionalItem (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> 파일 관련 이벤트는 파일명, 검수 및 취소 의견 등의 이벤트는 의견이 기록됨 </div>
+<div class="param">worker (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">array[String]</a></span> 작업자가 없는 경우 Empty or Host Server </div>
     </div>  <!-- field-items -->
   </div>
   </body>
